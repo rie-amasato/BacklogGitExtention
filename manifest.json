@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Backlog git stepCounter",
+  "version": "1.0.0",
+  "description": "BacklogのGitでステップ数を表示したい拡張",
+  "content_scripts": [
+    {
+      "matches": ["https://*.backlog.com/git/*/*/pullRequests/*/diff"],
+      "run_at": "document_end",
+      "all_frames": true,
+      "js": ["displayStepCount.js"]
+    }
+  ]
+}
