@@ -8,7 +8,18 @@
       "matches": ["https://*.backlog.com/git/*/*/pullRequests/*/diff"],
       "run_at": "document_end",
       "all_frames": true,
-      "js": ["displayStepCount.js"]
+      "js": ["displayStepCount.js", "disableSPANonDiffLink.js"]
+    },
+    {
+      "matches": [
+        "https://*.backlog.com/git/*/*/pullRequests/*",
+        "https://*.backlog.com/git/*/*/pullRequests/*#*",
+        "https://*.backlog.com/git/*/*/pullRequests/*/history",
+        "https://*.backlog.com/git/*/*/pullRequests/*/history#*"
+      ],
+      "run_at": "document_end",
+      "all_frames": true,
+      "js": ["disableSPADiffLink.js"]
     }
   ]
 }
