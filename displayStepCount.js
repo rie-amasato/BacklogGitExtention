@@ -71,7 +71,7 @@ const observing = () => {
   const observer = new MutationObserver(() => {
     calcStepCount();
   });
-  observer.observe(elm_codeDiff, config);
+  if (elm_codeDiff) observer.observe(elm_codeDiff, config);
 
   return observer;
 };
