@@ -4,7 +4,7 @@ Backlog Git のプルリクで、ステップ数を表示する Chrome 拡張機
 
 ## Description
 プルリクエストのページで、ステップ数を追加で表示するフィールドを追加します。
-![](./readme/img/screenshot_stepcount.png)
+![](./readme/img/screenshot_stepcount.png)  
 (ステップ数350くらいのプルリクってちょっとしんどめだね)
 
 #### ステップ数取得ルール
